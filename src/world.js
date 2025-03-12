@@ -1,10 +1,10 @@
 // Spencer Chinn CSE 160 Winter 2025
 // Used various guides online, threejs.org guides and code as a base, and chatgpt to assist
-import * as THREE from './libs/three/build/three.module.js'; // Adjust the path to where 'three.module.js' is located
-import { OBJLoader } from './libs/three/addons/loaders/OBJLoader.js'; // Adjust the path to the local OBJLoader
-import { MTLLoader } from './libs/three/addons/loaders/MTLLoader.js'; // Adjust the path to the local MTLLoader
-import { GUI } from './libs/three/examples/jsm/libs/lil-gui.module.min.js'; // Adjust the path to the lil-gui module
-import { OrbitControls } from './libs/three/examples/jsm/controls/OrbitControls.js'; // Adjust the path to the OrbitControls module
+import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.130.1/build/three.module.js';
+import { OBJLoader } from 'https://cdn.jsdelivr.net/npm/three@0.130.1/examples/jsm/loaders/OBJLoader.js';
+import { MTLLoader } from 'https://cdn.jsdelivr.net/npm/three@0.130.1/examples/jsm/loaders/MTLLoader.js';
+import { GUI } from 'https://cdn.jsdelivr.net/npm/three@0.130.1/examples/jsm/libs/lil-gui.module.min.js';
+import { OrbitControls } from 'https://cdn.jsdelivr.net/npm/three@0.130.1/examples/jsm/controls/OrbitControls.js';
 
 
 // GLOBALS
