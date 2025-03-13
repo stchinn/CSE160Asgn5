@@ -1,11 +1,11 @@
 // Spencer Chinn CSE 160 Winter 2025
 // Used various guides online, threejs.org guides and code as a base, and chatgpt to assist
 
-import * as THREE from './three';
-import { OBJLoader } from './three/examples/jsm/loaders/OBJLoader.js';
-import { MTLLoader } from './three/examples/jsm/loaders/MTLLoader.js';
-import { GUI } from './three/examples/jsm/libs/lil-gui.module.min.js';
-import { OrbitControls } from './three/examples/jsm/controls/OrbitControls.js';
+import * as THREE from 'three';
+import { OBJLoader } from 'three/examples/jsm/loaders/OBJLoader.js';
+import { MTLLoader } from 'three/examples/jsm/loaders/MTLLoader.js';
+import { GUI } from 'three/examples/jsm/libs/lil-gui.module.min.js';
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 
 // GLOBALS
 let scene = new THREE.Scene();
