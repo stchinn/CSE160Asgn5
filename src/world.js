@@ -25,7 +25,7 @@ function createRenderer(canvas) {
 function createCamera(fov = 60) {
 	const aspect = 2; // the canvas default
 	const zNear = 0.1;
-	const zFar = 1000;
+	const zFar = 2000;
 	camera = new THREE.PerspectiveCamera(fov, aspect, zNear, zFar);
 	camera.position.set(8, 4, 10).multiplyScalar(3);
 	camera.lookAt(0, 0, 0);
@@ -105,7 +105,7 @@ function updateCamera() {
 
 }
 
-let moonPosition = { x: 300, y: 80, z: 300 };
+let moonPosition = { x: 200, y: 80, z: 200 };
 
 function createMoon() {
     const textureLoader = new THREE.TextureLoader();
@@ -132,7 +132,7 @@ function createMoon() {
 
     // moon mesh
     const moon = new THREE.Mesh(geometry, material);
-	moon.scale.set(48, 48, 48);
+	moon.scale.set(32, 32, 32);
     moon.position.set(moonPosition.x, moonPosition.y, moonPosition.z);
 
     return moon;
