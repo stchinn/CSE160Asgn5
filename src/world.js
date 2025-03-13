@@ -378,7 +378,7 @@ function setUpBuildings() {
 		for (let r = 0; r < 10; r++) {
 			let xloc = a + i * 40;
 			let zloc = b + r * 40;
-			loadModel('/models/large_buildingA.obj', '/models/large_buildingA.mtl', {x: xloc, y: 0, z: zloc}, buildingSize, buildingRotate );
+			loadModel('../models/large_buildingA.obj', '../models/large_buildingA.mtl', {x: xloc, y: 0, z: zloc}, buildingSize, buildingRotate );
 		}	
 	}
 }
@@ -393,7 +393,7 @@ function setUpRoads() {
 		for (let r = 0; r < 10; r++) {
 			let xloc = a + i * 25;
 			let zloc = b + r * 41;
-			loadModel('/models/roadtile.obj', '/models/roadtile.mtl', {x: xloc, y: -1, z: zloc}, buildingSize, buildingRotate );
+			loadModel('../models/roadtile.obj', '../models/roadtile.mtl', {x: xloc, y: -1, z: zloc}, buildingSize, buildingRotate );
 		}	
 	}
 }
