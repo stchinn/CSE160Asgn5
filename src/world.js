@@ -378,7 +378,7 @@ function setUpBuildings() {
 		for (let r = 0; r < 10; r++) {
 			let xloc = a + i * 40;
 			let zloc = b + r * 40;
-			loadModel('../models/large_buildingA.obj', '../models/large_buildingA.mtl', {x: xloc, y: 0, z: zloc}, buildingSize, buildingRotate );
+			loadModel('models/large_buildingA.obj', 'models/large_buildingA.mtl', {x: xloc, y: 0, z: zloc}, buildingSize, buildingRotate );
 		}	
 	}
 }
@@ -393,7 +393,7 @@ function setUpRoads() {
 		for (let r = 0; r < 10; r++) {
 			let xloc = a + i * 25;
 			let zloc = b + r * 41;
-			loadModel('../models/roadtile.obj', '../models/roadtile.mtl', {x: xloc, y: -1, z: zloc}, buildingSize, buildingRotate );
+			loadModel('models/roadtile.obj', 'models/roadtile.mtl', {x: xloc, y: -1, z: zloc}, buildingSize, buildingRotate );
 		}	
 	}
 }
@@ -410,7 +410,7 @@ function setUpLamps() {
 			let xloc = a + i * 25;
 			let zloc = b + r * 41;
             lampPositions.push({ x: xloc, z: zloc });
-			loadModel('/models/streetlamp.obj', '/models/streetlamp.mtl', {x: xloc, y: 6, z: zloc}, buildingSize, buildingRotate );
+			loadModel('models/streetlamp.obj', 'models/streetlamp.mtl', {x: xloc, y: 6, z: zloc}, buildingSize, buildingRotate );
 		}	
 	}
 	// too many and lights dont work, need to instance lights, to do
